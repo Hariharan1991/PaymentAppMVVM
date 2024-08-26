@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_90dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_weight="0.3"
+            android:src="@drawable/profile"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <LinearLayout
+            android:layout_weight="1.3"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimens_10dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/dimens_18sp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:text="Hariharan"
+                android:textColor="@color/black"
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_gravity="left"
+                android:text="Hariharan"
+                android:textColor="@color/lighter_grey_color"
+                android:id="@+id/tvTransferTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/dimens_20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/tvAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/dimens_20dp"
+        android:id="@+id/quizcard"
+        android:elevation="15dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/dimens_20dp"
+        android:layout_height="@dimen/dimens_200dp">
+
+        <RelativeLayout
+            android:background="@color/light_orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_margin="@dimen/dimens_10dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/dimens_15dp"
+                    android:id="@+id/tvDebitCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debit Card"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/dimens_30sp"
+                    android:textColor="@color/white"
+                    android:textStyle="italic|bold"
+                    android:id="@+id/tvVisa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VISA" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_30sp"
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RelativeLayout
+                android:layout_margin="@dimen/dimens_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/tvCardNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <TextView
+                    android:id="@+id/tvExpDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
